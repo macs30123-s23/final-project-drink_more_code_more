@@ -1,3 +1,6 @@
+# Large-Scale Computing Final Project: 
+# The Effect of Emotion in Social Media Content on Information Engagement: Reddit Analysis
+
 ## Research Question
 
 What is the relationship between emotion (emotion types, valence, and intensity) in social media content and information engagement and how moral convictions moderate the relationship?
@@ -6,6 +9,19 @@ What is the relationship between emotion (emotion types, valence, and intensity)
 ## Social Science Significance
 
 Social media has revolutionized the way we obtain information and shape our opinions (Cinelli et al., 2021), and it also affects our mental health (Braghieri et al., 2022) and behaviors (Kaya & Bicen, 2016). As our dependency on social media platforms grows, the effects of information on our cognition, emotions, and behaviors become more significant. Reliable, valuable, and trustworthy information should receive more attention, while misinformation diffusion should be interrupted promptly. Therefore, to maximize the benefits of high-quality information and reduce the harms of misinformation, it is crucial to understand how the audience engages with the content on social media, that is, information engagement with social media content. 
+
+### Information Engagement
+
+Information engagement, or content engagement, defined by Schreiner et al. (2019), refers to the quantifiable interaction of individuals with a piece of information without implying any connection to behavior antecedents such as attitudes, behavioral intentions, or even neurophysiological. In the context of social media, information engagement is mainly represented as at least one of the following metrics: liking (Swani et al., 2013), sharing (Nelson-Field et al., 2013; Stieglitz & Dang-Xuan, 2013), or commenting on a social media post (de Vries et al., 2012; Stieglitz & Dang-Xuan, 2012; Schreiner et al., 2019). The forms of these metrics are platform-dependent.
+
+### Moral Conviction
+
+Moral conviction is defined as "the belief that a given attitude is a reflection of one's core feelings or beliefs about fundamental issues of right and wrong" (Skitka et al., 2021). Topics such as abortion, capital punishment, gun control, immigration, and same-sex marriage are considered to be associated with strong moral convictions (Skitka et al., 2021). Conversely, topics related to personal preferences, such as favorite movies or music, which do not conform to the definition of moral conviction, are regarded with low or no moral conviction.
+
+Moral conviction is linked to various emotions, encompassing those directly connected to the issue that evokes moral conviction (Skitka & Wisneski, 2011). Additionally, it involves self-relevant emotions, such as the anticipation of feeling proud when actively participating in political matters and the anticipation of guilt when failing to do so (Morgan, 2011; Skitka et al., 2017). 
+
+When challenged, these convictions may lead to negative emotions and make it difficult for individuals to consider different perspectives (Zaal et al., 2015). Individuals with higher moral convictions were less likely to engage in perspective-taking and showed a reduced willingness to compromise on moral issues (Skitka et al., 2021). Conversely, affirmation of these convictions may generate positive emotions that reinforce beliefs and identity, suggesting the possibility that moral conviction may moderate the relationship between emotion and information engagement.
+
 
 
 ## Approaches
@@ -28,7 +44,7 @@ Finally, the project information and analysis results is deployed using flask on
 
 In our study, it is important to acknowledge certain limitations.
 
-Firstly, the rate limit of Reddit and API restrictions. It takes a long time to scrape messages due to Reddit’s rate limiting on accounts even though parallel scraping is employed. In addition, the API connection stopped over five minutes, so we were only able to get a sample of the posts and comments from the 8 subreddits.  
+Firstly, the rate limit of Reddit and API restrictions. It takes a long time to scrape messages due to Reddit’s rate limiting on accounts even though parallel scraping is employed. In addition, the API connection stopped over five minutes, so we were only able to get a sample of the posts and comments from the 8 subreddits. 
 
 Secondly, we did not take into account the potential influence of subreddit moderators on the emotion analysis results. This is due to the lack of a direct method in PRAW (Python Reddit API Wrapper) to map moderator IDs to their corresponding names. As a result, we were unable to identify and exclude messages sent by moderators from our analysis.
 
@@ -40,10 +56,16 @@ Lastly, it is important to note that the specific algorithm used in the pre-trai
 ## References
 - Braghieri, L., Levy, R., & Makarin, A. (2022). Social Media and Mental Health. American Economic Review, 112(11), 3660–3693. https://doi.org/10.1257/aer.20211218
 - Cinelli, M., De Francisci Morales, G., Galeazzi, A., Quattrociocchi, W., & Starnini, M. (2021). The Echo Chamber Effect on social media. Proceedings of the National Academy of Sciences, 118(9). https://doi.org/10.1073/pnas.2023301118
+- De Vries, L., Gensler, S., & Leeflang, P. S. H. (2012). Popularity of brand posts on Brand Fan Pages: An investigation of the effects of social media marketing. Journal of Interactive Marketing, 26(2), 83–91. https://doi.org/10.1016/j.intmar.2012.01.003
 - Kaya, T., & Bicen, H. (2016). The effects of social media on students’ behaviors; Facebook as a case study. Computers in Human Behavior, 59, 374–379. https://doi.org/10.1016/j.chb.2016.02.036 
+- Morgan, G.S. (2011). Toward a Model of Morally Motivated Behavior: Investigating Mediators of the Moral Conviction-Action Link.
+- Nelson-Field, K., Riebe, E., & Newstead, K. (2013). The emotions that drive viral video. Australasian Marketing Journal, 21(4), 205–211. https://doi.org/10.1016/j.ausmj.2013.07.003
+- Schreiner, M., Fischer, T., & Riedl, R. (2019). Impact of content characteristics and emotion on behavioral engagement in social media: Literature Review and research agenda. Electronic Commerce Research, 21(2), 329–345. https://doi.org/10.1007/s10660-019-09353-8
+- Skitka, L. J., Bauman, C. W., & Mullen, E. (2021). Moral conviction. Annual Review of Psychology, 72, 1-24.
 - Spark NLP: State-of-the-Art Natural Language Processing. (2023). [Scala]. John Snow Labs. https://github.com/JohnSnowLabs/spark-nlp (Original work published 2017)
+- Stieglitz, S., & Dang-Xuan, L. (2013). Emotions and Information Diffusion in Social Media—Sentiment of Microblogs and Sharing Behavior. Journal of Management Information Systems, 29(4), 217-248. doi: 10.2753/MIS0742-1222290408
+- Swani, K., Milne, G., & P. Brown, B. (2013). Spreading the word through likes on Facebook. Journal of Research in Interactive Marketing, 7(4), 269–294. https://doi.org/10.1108/jrim-05-2013-0026 
 - Website & Web App Deployment—AWS Elastic Beanstalk—AWS. (n.d.). Amazon Web Services, Inc. Retrieved May 26, 2023, from https://aws.amazon.com/elasticbeanstalk/
-
 
 
 ## Divion of Labor:
