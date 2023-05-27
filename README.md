@@ -69,6 +69,6 @@ Lastly, it is important to note that the specific algorithm used in the pre-trai
 
 
 ## Divion of Labor:
-- Yingzi Jin: data processing and analyzing (including EDA, classification, and statistical analysis) using PySpark
-- Ruoyi Wu: parallel data collection, scalable deployment of visualization
+- Yingzi Jin: data processing and analyzing (including EDA, statistical analysis, and visualizations) using PySpark
+- Ruoyi Wu: parallel data collection, classification using Spark NLP, scalable deployment of visualization
 
