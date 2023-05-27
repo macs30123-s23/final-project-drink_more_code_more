@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reddit Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}"/>
+</head>
+
+<body style="background:#FF8C00;">
+    <div class="wrapper" style="background:#ffffff;">
+        <nav class="navbar navbar-default" style="background:#FF8C00;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" style="color:#B40808;" href="/">Emotion Analysis on Reddit
+                </a>
+              </div>
+            </div>
+          </nav>
+    <div class="hero text-center">
+      <h1 style="color:#B40808;">Sentiment Analysis</h1>
+    </div>
+      <div class="container">
+        <div class="row margin-top-50">
+          <div class="col-md-2" >
+            <aside class="filters" style="background:#FF8C00;">
+              <div class="panel panel-default" style="background:#FF8C00;">
+                <div class="panel-heading" style="background: #FF3600;">Navigation</div>
+                    <div class="panel-body" style="text-align: center;">
+                      <br>
+                      <a href="/" style="text-decoration-color: #ffffff; color: white;">Homepage</a>
+                      <br>
+                      <br>
+                      <a href="/stat_analysis" style="text-decoration-color: #ffffff; color: white;">Statistical Analysis</a>
+                      <br>
+                      <br>
+                      <a href="/overview" style="text-decoration-color: #ffffff; color: white;">Overview</a>
+                      <br>
+                      <br>
+                      <a href="/classification" style="text-decoration-color: #ffffff; color: white;">Emotion Classification</a>
+                      <br>
+                      <br>
+                      
+                
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-10", style="color:#060606;">
+            <div id="plot">
+              <h2>Sentiment Intensity</h2>
+              <br>
+              <h4>
+                <p style="font-size:70px">&#128578; &#128512; &#128513; &#128518; &#129315;</p>
+                <p style="font-size:70px">&#128577; &#128544; &#128548; &#128545; &#129324;</p>
+              </h4>
+              <br>
+                <div>
+                  <h3>Sentiment</h3>
+                    <p>We used VADER package to measure sentiment intensity of posts and comments. We classify compound <= -0.05 as negative, compound >= 0.05 as positive, and else as neutral.</p>
+                    <table>
+                      <tr>
+                        <td><img src="static/images/intensity_post_body.png" alt="Image 1" width="455"></td>
+                        <td><img src="static/images/abs_intensity_post_body.png" alt="Image 2" width="455"></td>
+                      </tr>
+                    </table>
+                    <br>
+                    <table>
+                      <tr>
+                        <td><img src="static/images/intensity_title.png" alt="Image 1" width="455"></td>
+                        <td><img src="static/images/abs_intensity_title.png" alt="Image 2" width="455"></td>
+                      </tr>
+                    </table>
+                    <br>
+                    <table>
+                      <tr>
+                        <td><img src="static/images/inten_comm.png" alt="Image 1" width="455"></td>
+                        <td><img src="static/images/abs_inten_comm.png" alt="Image 2" width="455"></td>
+                      </tr>
+                    </table>
+                    <br>
+                    <table>
+                      <tr>
+                        <td><img src="static/images/compound_intense.png" alt="Image 1" width="455"></td>
+                        <td><img src="static/images/compound_intense_abs.png" alt="Image 2" width="455"></td>
+                      </tr>
+                    </table>
+                    <br>
+                    <table>
+                      <tr>
+                        <td><img src="static/images/compound_title.png" alt="Image 1" width="455"></td>
+                        <td><img src="static/images/compound_title_abs.png" alt="Image 2" width="455"></td>
+                      </tr>
+                    </table>
+                    <br>
+                    <table>
+                      <tr>
+                        <td><img src="static/images/compound_comm.png" alt="Image 1" width="455"></td>
+                        <td><img src="static/images/compound_comm_abs.png" alt="Image 2" width="455"></td>
+                      </tr>
+                    </table>
+                    <br>
+                </div>
+                <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer" style="background:#FF8C00;">
+        <span class="bottom" style="background:#FF8C00;">MACS30123 Final Project by Yingzi Jin and Ruoyi Wu</span>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reddit Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}"/>
+</head>
+
+<body style="background:#FF8C00;">
+    <div class="wrapper" style="background:#ffffff;">
+      <nav class="navbar navbar-default" style="background:#FF8C00;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" style="color:#B40808;" href="/">Emotion Analysis on Reddit
+              <img class="nav-ufo" src="static/images/logo2.jpg">
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero text-center">
+        <h1 style="color:#B40808;">Emotion Analysis on Reddit</h1>
+      </div>
+      <div class="container">
+        <div class="row margin-top-50">
+          <div class="col-md-2">
+            <aside class="filters" style="background:#FF8C00;">
+              <div class="panel panel-default" style="background:#FF3600;">
+                <div class="panel-heading" style="background: #FF3600;">Navigation</div>
+                    <div class="panel-body" style="text-align: center;">
+                        <br>
+                        <a href="/overview" style="text-decoration-color: #ffffff; color: white;">Overview</a>
+                        <br>
+                        <br>
+                        <a href="/sentiment" style="text-decoration-color: #ffffff; color: white;">Sentiment Analysis</a>
+                        <br>
+                        <br>
+                        <a href="/stat_analysis" style="text-decoration-color: #ffffff; color: white;">Statistical Analysis</a>
+                        <br>
+                        <br>
+                        <a href="/classification" style="text-decoration-color: #ffffff; color: white;">Emotion Classification</a>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+            </aside>
+          </div>
+          <div class="col-md-10", style="color:#060606;">
+            <div id="plot">
+              <h1>Project Summary</h1>
+              <br>
+              <h4>Introduction</h4>
+              <p>There are a bunch of tools developed for analyzing news articles (<a href="https://mediacloud.org/">Media Cloud</a>) and mainstream social media platforms like Facebook and Twitter in the communication field. However, as Reddit has become an emerging platform that is substantially important in the political discussion and financial industry, analytical tools designed for Reddit remains deficient. This project aiming at developing a data management system that can illustrate the top hit posts on Reddit and monitor the popular discussion in different subReddits.</p><br>
+              <h4>Data Collection</h4>
+              <ol>
+              <li>We scraped Reddit posts and comments starting from the hotest posts and comments in 8 Subreddits:</li>
+                <ul style="list-style-type:circle">
+                  <li>r/firearms</li>
+                  <li>r/gunpolitics</li>              
+                  <li>r/Abortiondebate</li>
+                  <li>r/prolife</li>
+                  <li>r/prochoice</li>
+                  <li>r/Music</li>
+                  <li>r/movies</li>
+                  <li>r/MovieSuggestions</li>
+                </ul>
+              <li>The posts and comments are stored in two separate RDS tables.</li>
+
+              </ol>
+              <br>
+              <h4>Approaches</h4>
+              <ol>
+                <li>This project first used AWS Lambda functions and PRAW (Python Reddit Api Wrapper) to parallelize posts and comments collections from the 8 Subreddits mentioned above.</li>
+                <li>Stored and organized data in 2 RDS tables separately.</li>
+                <li>Queried data from RDS tables and performed a variety of analytics to different types of data (eg. applying sentiment analysis to Reddit post titles) using Spark to process in parallel.</li>
+                </ol>
+                <br>
+
+              <h4>Significance</h4>
+              <p>social science Significance</p>
+              <br>            
+            </div>
+            </aside>
+          </div>
+
+      </div>
+      <footer class="footer" style="background:#FF8C00;">
+        <span class="bottom" style="background:#FF8C00;">MACS30123 Final Project by Yingzi Jin and Ruoyi Wu</span>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+  </body>
+
+</html>

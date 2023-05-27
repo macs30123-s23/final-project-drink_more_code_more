@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reddit Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}"/>
+</head>
+
+<body style="background:#FF8C00;">
+    <div class="wrapper" style="background:#ffffff;">
+        <nav class="navbar navbar-default" style="background:#FF8C00;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" style="color:#B40808;" href="/">Emotion Analysis on Reddit
+                </a>
+              </div>
+            </div>
+          </nav>
+    <div class="hero text-center">
+      <h1 style="color:#B40808;">Statistical Analysis</h1>
+    </div>
+      <div class="container">
+        <div class="row margin-top-50">
+          <div class="col-md-2" >
+            <aside class="filters" style="background:#FF8C00;">
+              <div class="panel panel-default" style="background:#FF8C00;">
+                <div class="panel-heading" style="background: #FF3600;">Navigation</div>
+                    <div class="panel-body" style="text-align: center;">
+                      <br>
+                      <a href="/" style="text-decoration-color: #ffffff; color: white;">Homepage</a>
+                      <br>
+                      <br>
+                      <a href="/classification" style="text-decoration-color: #ffffff; color: white;">Emotion Classification</a>
+                      <br>
+                      <br>
+                      <a href="/sentiment" style="text-decoration-color: #ffffff; color: white;">Sentiment Analysis</a>
+                      <br>
+                      <br>
+                      <a href="/overview" style="text-decoration-color: #ffffff; color: white;">Overview</a>
+                      <br>
+                      <br>
+                      
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-10", style="color:#060606;">
+            <div id="plot">
+              <h2>Significant Results</h2>
+              <br>
+              <h4>blabla</h4>
+              <p>blabla2</p> 
+              <br>
+                <div>
+                  <h4>Vis 1</h4>
+                </div>
+                <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer" style="background:#FF8C00;">
+        <span class="bottom" style="background:#FF8C00;">MACS30123 Final Project by Yingzi Jin and Ruoyi Wu</span>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  </body>
+
+</html>
