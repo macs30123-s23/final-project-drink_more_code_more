@@ -12,7 +12,10 @@ Social media has revolutionized the way we obtain information and shape our opin
 
 ### Information Engagement
 
-Information engagement, or content engagement, defined by Schreiner et al. (2019), refers to the quantifiable interaction of individuals with a piece of information without implying any connection to behavior antecedents such as attitudes, behavioral intentions, or even neurophysiological. In the context of social media, information engagement is mainly represented as at least one of the following metrics: liking (Swani et al., 2013), sharing (Nelson-Field et al., 2013; Stieglitz & Dang-Xuan, 2013), or commenting on a social media post (de Vries et al., 2012; Stieglitz & Dang-Xuan, 2012; Schreiner et al., 2019). The forms of these metrics are platform-dependent.
+Information engagement, or content engagement, defined by Schreiner et al. (2019), refers to the quantifiable interaction of individuals with a piece of information without implying any connection to behavior antecedents such as attitudes, behavioral intentions, or even neurophysiological. In the context of social media, information engagement is mainly represented as at least one of the following metrics: liking (Swani et al., 2013), sharing (Nelson-Field et al., 2013; Stieglitz & Dang-Xuan, 2013), or commenting on a social media post (de Vries et al., 2012; Stieglitz & Dang-Xuan, 2012; Schreiner et al., 2019). The forms of these metrics are platform-dependent. For example, on Reddit, the metrics of engagement include scores (upvotes - downvotes) and number of comments. 
+
+### The Effect of Emotion on Information Engagement
+
 
 ### Moral Conviction
 
