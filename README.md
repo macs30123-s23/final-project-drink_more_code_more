@@ -88,6 +88,7 @@ In addition, the posts' content labeled as fear tend to be slightly more engaged
 <mg src="/analysis/emo_engage1.png">
 <mg src="/analysis/emo_engage2.png">
 
+(Code for data cleaning, preprocessing, and statistical analysis can be found [here](analysis/final_project_analysis.ipynb)
 
 ## Discussion
 
