@@ -77,16 +77,16 @@ We can see that for posts' body, the higher absolute intensity of negative emoti
 
 
 For emotional type, we can see that fear is the most significant emotion in the content. 
-<mg src="/analysis/emo_cmts.png">
+<img src="/analysis/emo_cmts.png">
 
 Also, when destructing the result by moral conviction level, we can see that high-level moral conviction communities contributes much more fear (than other emotions) to the content than low-level moral conviction communities.
 
-<mg src="/analysis/emo_moral.png">
+<img src="/analysis/emo_moral.png">
 
 In addition, the posts' content labeled as fear tend to be slightly more engaged than the rest of the emotions in average. 
 
-<mg src="/analysis/emo_engage1.png">
-<mg src="/analysis/emo_engage2.png">
+<img src="/analysis/emo_engage1.png">
+<img src="/analysis/emo_engage2.png">
 
 (Code for data cleaning, preprocessing, and statistical analysis can be found [here](analysis/final_project_analysis.ipynb)
 
