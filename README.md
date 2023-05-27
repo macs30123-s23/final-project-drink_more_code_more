@@ -10,7 +10,7 @@ Social media has revolutionized the way we obtain information and shape our opin
 
 ## Approaches
 
-This study uses data scraped from Reddit. The data is collected using three sets of subreddits: 1) firearms/gunpolitics, 2) Abortiondebate/prolife/prochoice, and 3) Music/movies/MovieSuggestions, to represent gun violence, abortion, and random topics, respectively. 2 AWS Lambda functions and PRAW (Python Reddit Api Wrapper) are employed in the data collection for parallelizing the scraping from 8 subreddits [Lambda1](lambda1.py), and subsequently, parallelizing the scraping of comments to all 50 Lambda workers to reduce the overall scraping time [Lambda2](lambda2.py). The full code for scraping can be found in [rds_conn.ipynb](rds_conn.ipynb).
+This study uses data scraped from Reddit. The data is collected using three sets of subreddits: 1) firearms/gunpolitics, 2) Abortiondebate/prolife/prochoice, and 3) Music/movies/MovieSuggestions, to represent gun violence, abortion, and random topics, respectively. 2 AWS Lambda functions and PRAW (Python Reddit Api Wrapper) are employed in the data collection for parallelizing the scraping from 8 subreddits **[Lambda1](lambda1.py)**, and subsequently, parallelizing the scraping of comments to all 50 Lambda workers to reduce the overall scraping time **[Lambda2](lambda2.py)**. The full code for scraping can be found in **[rds_conn.ipynb](rds_conn.ipynb)**.
 
 Each reddit post or comment has its unique ID, so duplicates are avoided. However, since some messages exclusively contained images unsuitable for this research, only messages that contained textual content were selected. The data collection process included messages from the hottest posts to the least popular posts, encompassing both the posts themselves and their subsequent comments. To facilitate scalable and shareable storage, the posts and comments were stored in separate AWS RDS tables.
 
@@ -18,11 +18,11 @@ For each post, the following information was collected: the subreddit it belonge
 
 Before proceeding with data analysis, certain preprocessing steps were implemented. Specifically, message bodies labeled as "[deleted]," messages containing emails and/or other URLs, and pinned messages regarding rules were removed. This preprocessing aimed to minimize potential influences on the subsequent analysis and classification of emotions.
 
-From data analysis in [](), we have found that 
+From data analysis in **[]()**, we have found that 
 
 Additionally, we used Spark NLP to classify texts, including post bodies, post titles, and comment bodies, to 4 emotions, including joy, sadness, fear, and surprise. Spark NLP offers convenient access to pre-trained models and pipelines for this purpose ("Spark NLP"). When it comes to emotion classification, Spark NLP employs a neural network model that converts the text into word embeddings and subsequently assigns one of the four emotions as the output.
 
-Finally, the project information and analysis results is deployed using flask on the AWS Elastic Beanstalk, which allows automatic scaling up and down based on demand and also increases its availability and fault tolerance as the web application is deployed across multiple availability zones ("Website & Web App Deployment—AWS Elastic Beanstalk—AWS"). The website can be accessed at Reddit-vis-env.eba-bmeifumb.us-east-1.elasticbeanstalk.com. 
+Finally, the project information and analysis results is deployed using flask on the AWS Elastic Beanstalk, which allows automatic scaling up and down based on demand and also increases its availability and fault tolerance as the web application is deployed across multiple availability zones ("Website & Web App Deployment—AWS Elastic Beanstalk—AWS"). The website can be accessed at **Reddit-vis-env.eba-bmeifumb.us-east-1.elasticbeanstalk.com**. 
 
 ## Discussion
 
