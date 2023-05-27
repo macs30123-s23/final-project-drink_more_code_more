@@ -36,7 +36,7 @@
                       <a href="/" style="text-decoration-color: #ffffff; color: white;">Homepage</a>
                       <br>
                       <br>
-                      <a href="/classification" style="text-decoration-color: #ffffff; color: white;">Emotion Classification</a>
+                      <a href="/stat_analysis" style="text-decoration-color: #ffffff; color: white;">Statistical Analysis</a>
                       <br>
                       <br>
                       <a href="/sentiment" style="text-decoration-color: #ffffff; color: white;">Sentiment Analysis</a>
@@ -57,10 +57,31 @@
               <p>Spark NLP takes advantage of distributed computing capabilities provided by Apache Spark, enabling efficient processing of large-scale text datasets. Emotion classification in Spark NLP is based on state-of-the-art machine learning techniques, including deep learning models such as convolutional neural networks (CNNs) or long short-term memory (LSTM) networks. These models are trained on large annotated datasets to learn the patterns and linguistic cues associated with different emotions.</p>
               <h2>Classification Results</h2>
               <br>
-                <h3>A snapshot of the results:</h3>
-                <img src="static/images/cls.png" width="500">
-              <br>
-
+                <h3>Distribution of Emotions</h3>
+                <table>
+                  <tr>
+                    <td><img src="static/images/emo_cts.png" alt="Image 1" width="400"></td>
+                    <td><img src="static/images/emo_cts_title.png" alt="Image 2" width="400"></td>
+                    <td><img src="static/images/emo_cts_comm.png" alt="Image 3" width="400"></td>
+                  </tr>
+                </table>
+              <br><br>
+              <h3>Emotions by Moral Conviction</h3>
+                <table>
+                  <tr>
+                    <td><img src="static/images/mc_emo_post.png" alt="Image 1" width="400"></td>
+                    <td><img src="static/images/mc_emo_title.png" alt="Image 2" width="400"></td>
+                    <td><img src="static/images/mc_emo_comm.png" alt="Image 3" width="400"></td>
+                  </tr>
+                </table>
+              <br><br>
+              <h3>Log Engagement by Emotion</h3>
+              <table>
+                <tr>
+                  <td><img src="static/images/log_post.png" alt="Image 1" width="455"></td>
+                  <td><img src="static/images/log_comm.png" alt="Image 2" width="455"></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>

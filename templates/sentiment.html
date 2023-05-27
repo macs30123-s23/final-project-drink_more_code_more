@@ -35,13 +35,13 @@
                       <a href="/" style="text-decoration-color: #ffffff; color: white;">Homepage</a>
                       <br>
                       <br>
+                      <a href="/classification" style="text-decoration-color: #ffffff; color: white;">Emotion Classification</a>
+                      <br>
+                      <br>
                       <a href="/stat_analysis" style="text-decoration-color: #ffffff; color: white;">Statistical Analysis</a>
                       <br>
                       <br>
                       <a href="/overview" style="text-decoration-color: #ffffff; color: white;">Overview</a>
-                      <br>
-                      <br>
-                      <a href="/classification" style="text-decoration-color: #ffffff; color: white;">Emotion Classification</a>
                       <br>
                       <br>
                       
@@ -51,58 +51,63 @@
           </div>
           <div class="col-md-10", style="color:#060606;">
             <div id="plot">
-              <h2>Sentiment Intensity</h2>
-              <br>
               <h4>
-                <p style="font-size:70px">&#128578; &#128512; &#128513; &#128518; &#129315;</p>
-                <p style="font-size:70px">&#128577; &#128544; &#128548; &#128545; &#129324;</p>
+                <p style="font-size:70px; margin-left: 150px;">&#128578; &#128512; &#128513; &#128518; &#129315;</p>
+                <p style="font-size:70px; margin-left: 150px; ">&#128577; &#128544; &#128548; &#128545; &#129324;</p>
               </h4>
               <br>
                 <div>
-                  <h3>Sentiment</h3>
+                  <h2>Sentiment Intensity</h2>
                     <p>We used VADER package to measure sentiment intensity of posts and comments. We classify compound <= -0.05 as negative, compound >= 0.05 as positive, and else as neutral.</p>
+                    <br>
+                    <h3>Intensities of Post Bodies</h3>
                     <table>
                       <tr>
                         <td><img src="static/images/intensity_post_body.png" alt="Image 1" width="455"></td>
                         <td><img src="static/images/abs_intensity_post_body.png" alt="Image 2" width="455"></td>
                       </tr>
                     </table>
-                    <br>
+                    <br><br>
+                    <h3>Intensities of Post Titles</h3>
                     <table>
                       <tr>
                         <td><img src="static/images/intensity_title.png" alt="Image 1" width="455"></td>
                         <td><img src="static/images/abs_intensity_title.png" alt="Image 2" width="455"></td>
                       </tr>
                     </table>
-                    <br>
+                    <br><br>
+                    <h3>Intensities of Comment Bodies</h3>
                     <table>
                       <tr>
                         <td><img src="static/images/inten_comm.png" alt="Image 1" width="455"></td>
                         <td><img src="static/images/abs_inten_comm.png" alt="Image 2" width="455"></td>
                       </tr>
                     </table>
-                    <br>
+                    <br><br>
+                    <h3>Intensities of Post Bodies by Moral Conviction</h3>
                     <table>
                       <tr>
                         <td><img src="static/images/compound_intense.png" alt="Image 1" width="455"></td>
                         <td><img src="static/images/compound_intense_abs.png" alt="Image 2" width="455"></td>
                       </tr>
                     </table>
-                    <br>
+                    <br><br>
+                    <h3>Intensities of Post Titles by Moral Conviction</h3>
                     <table>
                       <tr>
                         <td><img src="static/images/compound_title.png" alt="Image 1" width="455"></td>
                         <td><img src="static/images/compound_title_abs.png" alt="Image 2" width="455"></td>
                       </tr>
                     </table>
-                    <br>
+                    <br><br>
+                    <h3>Intensities of Comment Bodies by Moral Conviction</h3>
                     <table>
                       <tr>
                         <td><img src="static/images/compound_comm.png" alt="Image 1" width="455"></td>
                         <td><img src="static/images/compound_comm_abs.png" alt="Image 2" width="455"></td>
                       </tr>
                     </table>
-                    <br>
+                    <br><br>
                 </div>
                 <br>
             </div>
